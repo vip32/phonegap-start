@@ -41,5 +41,7 @@ var app = {
 
         var infoElem = document.getElementById('info');
         infoElem.innerHTML = 'phonegap (version' + device.phonegap + ')<br/>' + device.platform + ' ' + device.name + ' (version '+ device.version + ').';
+        
+        console.log(device);
     }
 };
