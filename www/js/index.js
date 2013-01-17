@@ -38,5 +38,8 @@ var app = {
         document.querySelector('#' + id + ' .pending').className += ' hide';
         var completeElem = document.querySelector('#' + id + ' .complete');
         completeElem.className = completeElem.className.split('hide').join('');
+
+        var infoElem = document.getElementById('info');
+        infoElem.innerHTML = 'phonegap (version' + device.phonegap + ')<br/>' + device.platform + ' ' + device.name + ' (version '+ device.version + ').';
     }
 };
